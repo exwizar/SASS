@@ -1,0 +1,29 @@
+$main-color1: #262C27;
+$main-color2: #fff;
+$main-color3: #0093A1;
+$main-color4: #B9C400;
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.header__decor-1, .header__decor-2 {
+    color: $main-color3;
+    font-size: 130px;
+    line-height: 145px;
+    opacity: 0.3;
+    @extend %font-comfortaa400;
+}
