@@ -3,7 +3,7 @@
   font-weight: 700;
 }
 
-.header__decor-1, .header__decor-2 {
+main .main-pocket .main-pocket__heading, .header .header__decor-1, .header .header__decor-2 {
   font-family: "Comfortaa";
   font-weight: 400;
 }
@@ -11,6 +11,16 @@
 .header .header__decor-3 {
   font-family: "Inter", sans-serif;
   font-weight: 300;
+}
+
+main .main-pocket .pocket__column .pocket__group .pocket__block .pocket__text, main .main-info .main__block-content .main__info-text, .play-btn .play {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+main .main-pocket .pocket__column .pocket__group .pocket__block .pocket__column-heading, main .main-info .specs .specs-column {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
 }
 
 html, body, div, span, object, iframe,
@@ -124,11 +134,36 @@ a {
   text-decoration: none;
 }
 
-.header__decor-1, .header__decor-2 {
-  color: #0093A1;
-  font-size: 130px;
-  line-height: 145px;
-  opacity: 0.3;
+.line {
+  margin: 30px 0;
+  border: 1px solid #fff;
+}
+
+.play-btn {
+  display: block;
+  float: right;
+  margin-top: 90px;
+}
+.play-btn .play {
+  display: block;
+  color: white;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  padding: 5px 0 0 0;
+  margin-left: -5px;
+}
+
+.play-btn:hover path {
+  fill: #B9C400;
+}
+
+.play-btn:hover circle {
+  stroke: #B9C400;
+}
+
+.play__btn:hover {
+  color: #B9C400;
 }
 
 .header {
@@ -166,7 +201,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  transform: translateY(80%) rotate(180deg);
+  transform: translateY(87%) rotate(180deg);
   z-index: 3;
 }
 .header .header-menu {
@@ -226,6 +261,12 @@ a {
   line-height: 27px;
   margin-bottom: 25px;
 }
+.header .header__decor-1, .header .header__decor-2 {
+  color: #0093A1;
+  font-size: 130px;
+  line-height: 145px;
+  opacity: 0.3;
+}
 .header .header__decor-1 {
   position: absolute;
   bottom: 60px;
@@ -248,6 +289,104 @@ a {
   line-height: 39px;
   text-align: center;
   left: 55%;
+}
+
+.black-line {
+  background-color: #262C27;
+  width: 100%;
+  height: 180px;
+}
+
+main {
+  position: relative;
+}
+main .main-info {
+  background-image: url("/images/main-sea.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+main .main-info .main__block-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 80px;
+}
+main .main-info .main__block-content .main__info-text {
+  color: #fff;
+  font-size: 18px;
+  line-height: 21.78px;
+}
+main .main-info .main__block-content .main__info-block {
+  padding-top: 335px;
+  width: 290px;
+}
+main .main-info .main__block-content .main__block-longboard {
+  align-self: flex-end;
+  z-index: 10;
+}
+main .main-info .specs {
+  display: block;
+  margin: 0 auto;
+  width: 675px;
+  padding: 550px 0 20px 0;
+}
+main .main-info .specs .specs-column {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 21.78px;
+}
+main .main-info .specs .specs-column .specs__text {
+  margin: 12.5px 0;
+}
+main .main-pocket {
+  padding: 150px 0;
+}
+main .main-pocket .main-pocket__heading {
+  color: #0093A1;
+  font-size: 60px;
+  line-height: 67px;
+  padding-bottom: 70px;
+}
+main .main-pocket .pocket__column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main .main-pocket .pocket__column .pocket__group {
+  display: flex;
+  align-items: flex-end;
+}
+main .main-pocket .pocket__column .pocket__group .pocket__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 292px;
+  padding-bottom: 25px;
+}
+main .main-pocket .pocket__column .pocket__group .pocket__block .pocket__column-heading {
+  font-size: 18px;
+  color: #262C27;
+  padding-bottom: 5px;
+}
+main .main-pocket .pocket__column .pocket__group .pocket__block .pocket__text {
+  font-size: 18px;
+  color: #262C27;
+}
+main .main-pocket .pocket__column .pocket__btn {
+  display: block;
+  background: none;
+  color: #0093A1;
+  border: 1px solid #0093A1;
+  padding: 20px 242px;
+  margin: 30px 0;
 }
 
 /*# sourceMappingURL=style.css.map */
