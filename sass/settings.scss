@@ -19,6 +19,10 @@ a{
     text-decoration: none;
 }
 
+li {
+    list-style: none;
+}
+
 
 
 .line {
@@ -31,6 +35,7 @@ a{
     display: block;
     float: right;
     margin-top: 90px;
+    width: 90px;
     
 
     .play {
@@ -39,7 +44,7 @@ a{
         color: white;
         font-size: 18px;
         line-height: 22px;       
-        text-align: center; 
+        text-align: left;
         padding: 5px 0 0 0;
         margin-left: -5px;
     }
