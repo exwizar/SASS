@@ -1,9 +1,9 @@
-main .main-pocket .pocket__column .pocket__btn, .header .header-content .header__content-box, .header .header-menu .header__tel, .header .header-menu .header__btn {
+.footer .footer-box .footer__content-contact .footer__contactus-input .footer__btn, main .main-pocket .pocket__column .pocket__btn, .header .header-content .header__content-box, .header .header-menu .header__tel, .header .header-menu .header__btn {
   font-family: "Comfortaa";
   font-weight: 700;
 }
 
-main .technology-block .technology__block-main .micro-technology .technology__heading, main .main-pocket .main-pocket__heading, .header .header__decor-1, .header .header__decor-2 {
+.footer .footer-box .footer__content-contact .footer__contactus-input h2, main .technology-block .technology__block-main .micro-technology .technology__heading, main .main-pocket .main-pocket__heading, .header .header__decor-1, .header .header__decor-2 {
   font-family: "Comfortaa";
   font-weight: 400;
 }
@@ -13,14 +13,19 @@ main .technology-block .technology__block-main .micro-technology .technology__he
   font-weight: 300;
 }
 
-main .gallery .gallery__box .gallery__text, main .main-pocket .pocket__column .pocket__column-1 .pocket__group .pocket__group-1 .pocket__block .pocket__text, main .main-info .main__block-content .main__info-text, .play-btn .play {
+main .gallery-min .gallery__min-box .gallery__min-text, main .main-pocket .pocket__column .pocket__column-1 .pocket__group .pocket__group-1 .pocket__block .pocket__text, main .main-info .main__block-content .main__info-text, .play-btn .play {
   font-family: "Inter", sans-serif;
   font-weight: 400;
 }
 
-main .technology-block .technology__block-main .micro-technology .technology__text, main .main-pocket .pocket__column .pocket__column-1 .pocket__group .pocket__group-1 .pocket__block .pocket__column-heading, main .main-info .specs .specs-column {
+.footer .footer-box .footer-instagram .instagram__text, .footer .footer-box .footer__content-contact .footer__contactus-input .footer__input .footer__input[placeholder], main .technology-block .technology__block-main .micro-technology .technology__text, main .main-pocket .pocket__column .pocket__column-1 .pocket__group .pocket__group-1 .pocket__block .pocket__column-heading, main .main-info .specs .specs-column {
   font-family: "Inter", sans-serif;
   font-weight: 700;
+}
+
+main .gallery-big .gallery__big-box .gallery__big-items .gallery__big-item-6 p {
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
 }
 
 html, body, div, span, object, iframe,
@@ -219,6 +224,7 @@ li {
 }
 .header .header-menu .header__logo:hover path {
   fill: #0093A1;
+  transition: all 0.3s ease;
 }
 .header .header-menu .header__btn {
   padding: 13px 68px;
@@ -440,14 +446,14 @@ main .technology-block .technology__block-main .micro-technology .technology__te
   color: #262C27;
   padding-bottom: 15px;
 }
-main .gallery .gallery__box {
+main .gallery-min .gallery__min-box {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 68px;
   margin-top: -270px;
 }
-main .gallery .gallery__box .gallery__items {
+main .gallery-min .gallery__min-box .gallery__min-items {
   display: grid;
   position: relative;
   grid-template-columns: repeat(4, minmax(175px, 100px));
@@ -456,29 +462,165 @@ main .gallery .gallery__box .gallery__items {
   gap: 25px;
   border: 3px solid #262C27;
   border-radius: 200px 0px 300px;
-  z-index: 99;
   grid-template-areas: "a a a a" "a a a a" "a a a a" "b b b c" "b b b c";
+  z-index: index 99;
 }
-main .gallery .gallery__box .gallery__items .gallery__item {
+main .gallery-min .gallery__min-box .gallery__min-items .gallery__item {
   display: block;
   width: 100%;
   height: 100%;
 }
-main .gallery .gallery__box .gallery__items .gallery__item-1 {
+main .gallery-min .gallery__min-box .gallery__min-items .gallery__item-1 {
   grid-area: a;
   border-radius: 400px 0px 0px 0px;
 }
-main .gallery .gallery__box .gallery__items .gallery__item-2 {
+main .gallery-min .gallery__min-box .gallery__min-items .gallery__item-2 {
   grid-area: b;
   border-radius: 0px 0px 0px 300px;
 }
-main .gallery .gallery__box .gallery__items .gallery__item-3 {
+main .gallery-min .gallery__min-box .gallery__min-items .gallery__item-3 {
+  position: relative;
+  width: 100%;
+  height: 100%;
   grid-area: c;
   z-index: -1;
 }
-main .gallery .gallery__box .gallery__text {
+main .gallery-min .gallery__min-box .gallery__min-text {
   width: 350px;
   font-size: 18px;
+}
+main .gallery-big .gallery__big-box {
+  padding: 150px 0;
+}
+main .gallery-big .gallery__big-box .gallery__big-items {
+  display: grid;
+  grid-template-columns: repeat(13, 89px);
+  grid-template-rows: 340px 270px 270px;
+  gap: 20px;
+}
+main .gallery-big .gallery__big-box .gallery__big-items .gallery__big-item {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+main .gallery-big .gallery__big-box .gallery__big-items .gallery__big-item-1 {
+  grid-area: 1/1/1/6;
+}
+main .gallery-big .gallery__big-box .gallery__big-items .gallery__big-item-2 {
+  grid-area: 1/6/2/13;
+  border-radius: 0px 500px 0px 0px;
+}
+main .gallery-big .gallery__big-box .gallery__big-items .gallery__big-item-3 {
+  grid-area: 2/1/2/4;
+  border-radius: 0px 0px 150px 0px;
+}
+main .gallery-big .gallery__big-box .gallery__big-items .gallery__big-item-4 {
+  grid-area: 2/4/2/9;
+  border-radius: 0px 200px 0px 0px;
+}
+main .gallery-big .gallery__big-box .gallery__big-items .gallery__big-item-5 {
+  grid-area: 2/9/2/13;
+  border-radius: 200px 0px 0px 0px;
+}
+main .gallery-big .gallery__big-box .gallery__big-items .gallery__big-item-6 {
+  width: 300px;
+  height: 270px;
+  background-color: #0093A1;
+  border: 1px solid #0093A1;
+  border-radius: 0px 0px 0px 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: 3/1/3/4;
+}
+main .gallery-big .gallery__big-box .gallery__big-items .gallery__big-item-6 p {
+  width: 165px;
+  font-style: italic;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
+  color: #fff;
+}
+main .gallery-big .gallery__big-box .gallery__big-items .gallery__big-item-7 {
+  grid-area: 3/4/3/13;
+  border-radius: 0px 0px 0px 400px;
+}
+
+.footer {
+  background-color: #262C27;
+}
+.footer .footer-box {
+  padding: 100px 0;
+}
+.footer .footer-box .footer__content-contact {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.footer .footer-box .footer__content-contact .footer__contactus-input {
+  display: flex;
+  flex-direction: column;
+}
+.footer .footer-box .footer__content-contact .footer__contactus-input h2 {
+  font-size: 60px;
+  line-height: 67px;
+  color: #fff;
+}
+.footer .footer-box .footer__content-contact .footer__contactus-input .footer__input {
+  background: none;
+  border: none;
+  outline: 0;
+  outline-offset: 0;
+  border-bottom: 1px solid #fff;
+  opacity: 0.2;
+  width: 500px;
+  margin: 60px 0;
+}
+.footer .footer-box .footer__content-contact .footer__contactus-input .footer__input .footer__input[placeholder] {
+  font-size: 18px;
+  line-height: 21px;
+  color: #fff;
+  opacity: 0.2;
+}
+.footer .footer-box .footer__content-contact .footer__contactus-input .footer__btn {
+  width: 193px;
+  height: 42px;
+  border: none;
+  background-color: #fff;
+  font-size: 20px;
+  line-height: 22px;
+  color: #000;
+  cursor: pointer;
+}
+.footer .footer-box .footer__content-contact .footer__contacus-logo .footer__logo path {
+  transition: 0.3s ease-in-out;
+}
+.footer .footer-box .footer__content-contact .footer__contacus-logo .footer__logo path:hover {
+  fill: #0093A1;
+}
+.footer .footer-box .footer__content-contact .footer__contacus-logo .footer__logo path {
+  fill: #fff;
+}
+.footer .footer-box .footer-instagram {
+  margin: 100px 0 0 0;
+}
+.footer .footer-box .footer-instagram .instagram__text {
+  font-size: 18px;
+  line-height: 21px;
+  color: #fff;
+}
+.footer .footer-box .footer-instagram .instagram__photos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 50px 0;
+}
+.footer .footer-box .footer-instagram .footer-menu {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  flex-wrap: wrap;
 }
 
 /*# sourceMappingURL=style.css.map */

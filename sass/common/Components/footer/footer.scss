@@ -1,0 +1,96 @@
+.footer {
+    background-color: $main-color1;
+
+    .footer-box {
+        padding: 100px 0;
+
+        .footer__content-contact{
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+
+            .footer__contactus-input {
+                display: flex;
+                flex-direction: column;
+
+                h2 {
+                    @extend %font-comfortaa400;
+                    font-size: 60px;
+                    line-height: 67px;
+                    color: $main-color2;
+
+                }
+                .footer__input {
+                    background: none;
+                    border:none;
+                    outline: 0;
+                    outline-offset: 0;
+                    border-bottom: 1px solid $main-color2;
+                    opacity: 0.2;
+                    width: 500px;
+                    margin: 60px 0;
+
+                    .footer__input[placeholder]{
+                        @extend %font-inter700;
+                        font-size: 18px;
+                        line-height: 21px;
+                        color: $main-color2;
+                        opacity: 0.2;
+
+                    }
+                }
+
+                .footer__btn {
+                    width: 193px;
+                    height: 42px;
+                    border:none;
+                    background-color: $main-color2;
+                    @extend %font-comfortaa700;
+                    font-size: 20px;
+                    line-height: 22px;
+                    color: #000;
+                    cursor: pointer;
+                }
+            }
+
+            .footer__contacus-logo {
+                .footer__logo path{
+                    transition: 0.3s ease-in-out;
+                    &:hover  {
+                        fill:$main-color3;
+                    }
+                    &{
+                      fill: $main-color2;
+                    }
+                }
+
+            }
+        }
+
+        .footer-instagram {
+            margin: 100px 0 0 0;
+
+            .instagram__text{
+                @extend %font-inter700;
+                font-size: 18px;
+                line-height: 21px;
+                color: $main-color2;
+            }
+
+            .instagram__photos{
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                align-items: center;
+                margin: 50px 0;
+            }
+
+            .footer-menu {
+                display: flex;
+                justify-content: space-around;
+                align-content: center;
+                flex-wrap: wrap;
+            }
+        }
+    }
+}
