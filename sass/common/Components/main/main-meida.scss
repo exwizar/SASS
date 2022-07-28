@@ -1,0 +1,10 @@
+@media (min-width: 1350px) {
+    .gallery__big-items {
+        display: grid;
+        grid-template-columns: repeat(10, minmax(89px,auto));
+        grid-template-rows: 340px 270px 270px;
+        justify-content: center;
+        gap: 20px;
+    }
+
+}

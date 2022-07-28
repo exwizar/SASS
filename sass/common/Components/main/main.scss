@@ -7,7 +7,7 @@ main {
 
 
     .main-info {
-        background-image: url('../images/main-sea.jpg');
+        background-image: url(../images/main-sea.jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -149,7 +149,7 @@ main {
     }
 
     .technology-block {
-        background-image: url('../images/Group 20.png');
+        background-image: url(../images/Group-20.png);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -250,8 +250,9 @@ main {
             padding: 150px 0;
             .gallery__big-items {
                 display: grid;
-                grid-template-columns: repeat(13, 89px);
+                grid-template-columns: repeat(12, 89px);
                 grid-template-rows: 340px 270px 270px;
+                justify-content: center;
                 gap: 20px;
                 .gallery__big-item {
                     display: block;

@@ -177,7 +177,7 @@ li {
 }
 
 .header {
-  background-image: url("/images/header.jpg");
+  background-image: url("../images/header.jpg");
   min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -309,7 +309,7 @@ li {
 }
 
 main .main-info {
-  background-image: url("/images/main-sea.jpg");
+  background-image: url(../images/main-sea.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -418,7 +418,7 @@ main .main-pocket .pocket__column .pocket__btn:hover {
   border-color: #B9C400;
 }
 main .technology-block {
-  background-image: url("/images/Group 20.png");
+  background-image: url(../images/Group-20.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -494,8 +494,9 @@ main .gallery-big .gallery__big-box {
 }
 main .gallery-big .gallery__big-box .gallery__big-items {
   display: grid;
-  grid-template-columns: repeat(13, 89px);
+  grid-template-columns: repeat(12, 89px);
   grid-template-rows: 340px 270px 270px;
+  justify-content: center;
   gap: 20px;
 }
 main .gallery-big .gallery__big-box .gallery__big-items .gallery__big-item {
@@ -546,6 +547,15 @@ main .gallery-big .gallery__big-box .gallery__big-items .gallery__big-item-7 {
   border-radius: 0px 0px 0px 400px;
 }
 
+@media (min-width: 1350px) {
+  .gallery__big-items {
+    display: grid;
+    grid-template-columns: repeat(10, minmax(89px, auto));
+    grid-template-rows: 340px 270px 270px;
+    justify-content: center;
+    gap: 20px;
+  }
+}
 .footer {
   background-color: #262C27;
 }
@@ -556,6 +566,7 @@ main .gallery-big .gallery__big-box .gallery__big-items .gallery__big-item-7 {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 .footer .footer-box .footer__content-contact .footer__contactus-input {
   display: flex;
@@ -615,12 +626,20 @@ main .gallery-big .gallery__big-box .gallery__big-items .gallery__big-item-7 {
   flex-wrap: wrap;
   align-items: center;
   margin: 50px 0;
+  gap: 30px;
 }
 .footer .footer-box .footer-instagram .footer-menu {
   display: flex;
   justify-content: space-around;
   align-content: center;
   flex-wrap: wrap;
+  gap: 30px;
+}
+
+@media (min-width: 917px) {
+  .footer__contactus-input {
+    margin-bottom: 150px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

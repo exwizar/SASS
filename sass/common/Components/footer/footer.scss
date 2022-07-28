@@ -8,6 +8,7 @@
             display: flex;
             justify-content: space-around;
             align-items: flex-start;
+            flex-wrap: wrap;
 
             .footer__contactus-input {
                 display: flex;
@@ -83,6 +84,7 @@
                 flex-wrap: wrap;
                 align-items: center;
                 margin: 50px 0;
+                gap: 30px;
             }
 
             .footer-menu {
@@ -90,6 +92,7 @@
                 justify-content: space-around;
                 align-content: center;
                 flex-wrap: wrap;
+                gap:30px;
             }
         }
     }
