@@ -3,6 +3,11 @@ $main-color2: #fff;
 $main-color3: #0093A1;
 $main-color4: #B9C400;
 
+$breakpoint_xxl: 1400px;
+$breakpoint_xl: 1023px;
+$breakpoint_md: 707px;
+$breakpoint_sm: 576px;
+
 *,
 *::after,
 *::before {
@@ -15,21 +20,10 @@ $main-color4: #B9C400;
     padding: 0 15px;
 }
 
-a{
-    text-decoration: none;
-}
-
-li {
-    list-style: none;
-}
-
-
-
 .line {
     margin: 30px 0;
     border: 1px solid $main-color2;
 }
-
 
 .play-btn {
     display: block;
@@ -48,10 +42,6 @@ li {
         padding: 5px 0 0 0;
         margin-left: -5px;
     }
-
-
-
-
 }
 
 .play-btn:hover path {

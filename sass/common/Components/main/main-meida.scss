@@ -1,10 +1,141 @@
-@media (min-width: 1350px) {
-    .gallery__big-items {
-        display: grid;
-        grid-template-columns: repeat(10, minmax(89px,auto));
-        grid-template-rows: 340px 270px 270px;
-        justify-content: center;
-        gap: 20px;
-    }
+@include desktop {
+    .main{
 
+        .gallery-min {
+            padding-top:400px;
+            .gallery__min-box{
+                display: flex;
+                justify-content: center;
+                .gallery__min-items {
+                    display: none;
+                }
+                .gallery__min-text {
+                    width: 500px;
+                    text-align: center;
+                    font-size: 18px;
+                    z-index: 1;
+                }
+            }
+        }
+        
+        .gallery-big {
+            .gallery__big-box{
+                padding: 0 0 150px 0;
+                .gallery__big-items {
+                    display: grid;
+                    grid-gap: 5px;
+                    grid-template-columns: repeat(auto-fit, minmax(89px, 1fr));
+                    grid-template-rows: repeat(3, 200px);
+                    grid-template-areas:
+                    'a a b b'
+                    'c c d d'
+                    'e e f f';
+                    .gallery__big-item {
+                        border-radius: 10px;
+                    }
+                    .gallery__big-item-1{
+                        grid-area: a;
+                    }
+                    .gallery__big-item-2{
+                        grid-area: b;
+                    }
+                    .gallery__big-item-3{
+                        grid-area: c;
+                    }
+                    .gallery__big-item-4{
+                        grid-area: d;
+                    }
+                    .gallery__big-item-5{
+                        grid-area: e;
+                    }
+                    .gallery__big-item-6{
+                        display: none;
+
+                    }
+                    .gallery__big-item-7{
+                        grid-area: f;
+                    }
+                }
+            }
+        }
+    }
 }
+
+
+@include tablet {
+    main {
+
+        .line {
+            display: none;
+        }
+    
+
+    
+        .main-info {
+            .main__block-content {
+                .main__info-block  {
+                    padding-top: 100px;
+                }
+               }
+                
+                .main-pocket__heading {
+                    text-align: center;
+                }
+            .specs{
+                display: block;
+                margin: 0 auto;
+                padding: 550px 0 0 0;
+                width: 100%;
+                .specs-column {
+                    display: flex;
+                    justify-content: flex-start;
+                    padding: 10px;
+                    .specs__text {
+                        margin: 20px;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+        
+        .main-pocket {
+            .main-pocket__heading {
+                text-align: center;
+            }
+            .pocket__column {
+                margin-left: 50px;
+                .pocket__column-1{
+    
+                    .pocket__group {
+    
+                        .pocket__group-2 {
+                            .pocket__svg {
+                                width: 130px;
+                                height: 130px;
+                            }
+    
+                        }
+        
+                    }
+                .pocket__btn {
+                    display: block;
+                    text-align: center;
+                    padding: 20px 60px;
+                    width: 50%;
+                    margin: 40 auto;
+                } 
+                }
+                .pocket__column-2 {
+    
+                    .poceket__column-img {
+                        width:100%
+                    }
+                }
+            }     
+        }
+        
+            .technology-block .technology__block-main .micro-technology .technology__heading {
+                font-size:48px;
+            }
+        }
+    }
