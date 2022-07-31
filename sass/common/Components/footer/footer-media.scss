@@ -1,0 +1,65 @@
+@media (max-width: 918px) {
+    .footer {
+        .footer__contactus-input {
+            margin-bottom: 100px;
+        }
+        .instagram__text{ 
+            text-align: center;
+        }
+    }
+}
+
+@include mobile {
+    .footer {
+        .footer-box {
+            .footer__content-contact{
+                .footer__contactus-input {
+                    .footer__contactus-heading {
+                        text-align: center;
+                        font-size: 47px;
+                    }
+                    .footer__input {
+                        width: 340px;
+                        color: white;
+
+    
+                        .footer__input[placeholder]{
+                            @extend %font-inter700;
+                            font-size: 18px;
+                            line-height: 21px;
+                            color: $main-color2;
+                            opacity: 0.2;
+    
+                        }
+                    }
+    
+                    .footer__btn {
+                        width: 193px;
+                        height: 42px;
+                        border:none;
+                        background-color: $main-color2;
+                        @extend %font-comfortaa700;
+                        font-size: 20px;
+                        line-height: 22px;
+                        color: #000;
+                        cursor: pointer;
+                    }
+                }
+        
+                    .footer__contacus-logo {
+                        .footer__logo path{
+                            width:320px;
+                            transition: 0.3s ease-in-out;
+                            &:hover  {
+                                fill:$main-color3;
+                            }
+                            &{
+                              fill: $main-color2;
+                            }
+                        }
+        
+                    }
+                }
+            }
+    }
+}

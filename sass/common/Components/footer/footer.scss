@@ -14,11 +14,12 @@
                 display: flex;
                 flex-direction: column;
 
-                h2 {
+                .footer__contactus-heading {
                     @extend %font-comfortaa400;
                     font-size: 60px;
                     line-height: 67px;
                     color: $main-color2;
+                    text-transform: uppercase;
 
                 }
                 .footer__input {

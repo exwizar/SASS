@@ -48,7 +48,7 @@ main {
             width: 675px;
             padding: 550px 0 20px 0;
 
-    
+            
             .specs-column {
                 display: flex;
                 justify-content: center;
@@ -62,7 +62,20 @@ main {
         
                 .specs__text {
                     margin: 12.5px 0;
+                    text-transform: uppercase;
+                    
                 }
+            }
+
+            &:before {
+                content: 'Specs';
+                display: block;
+                position: relative;
+                top: 240px;
+                right: 250px;
+                @extend %font-comfortaa400;
+                font-size:60px;
+                color: $main-color2;
             }
         
         }
@@ -77,6 +90,7 @@ main {
             color: $main-color3;
             font-size: 60px;
             line-height: 67px;
+            text-transform: uppercase;
 
         }
         .pocket__column {
@@ -177,6 +191,7 @@ main {
                 line-height: 67px;
                 color: $main-color1;
                 width: 460px;
+                text-transform: uppercase;
                 }
                 .technology__text {
                     @extend %font-inter700;
