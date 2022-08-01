@@ -625,6 +625,7 @@ main .gallery-big .gallery__big-box .gallery__big-items .gallery__big-item-7 {
     grid-area: f;
   }
   .main .main-info .specs:before {
+    width: 200px;
     top: 0;
     left: 30px;
   }
