@@ -47,8 +47,12 @@
                 }
         
                     .footer__contacus-logo {
+
+                        .footer__logo svg {
+                            display: block;
+                            width: 290px;
+                        }
                         .footer__logo path{
-                            width:320px;
                             transition: 0.3s ease-in-out;
                             &:hover  {
                                 fill:$main-color3;

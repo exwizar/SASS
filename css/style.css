@@ -839,8 +839,11 @@ main .gallery-big .gallery__big-box .gallery__big-items .gallery__big-item-7 {
     color: #000;
     cursor: pointer;
   }
+  .footer .footer-box .footer__content-contact .footer__contacus-logo .footer__logo svg {
+    display: block;
+    width: 290px;
+  }
   .footer .footer-box .footer__content-contact .footer__contacus-logo .footer__logo path {
-    width: 320px;
     transition: 0.3s ease-in-out;
   }
   .footer .footer-box .footer__content-contact .footer__contacus-logo .footer__logo path:hover {
